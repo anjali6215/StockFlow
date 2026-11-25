@@ -80,7 +80,7 @@ Swagger UI: http://localhost:8000/docs
 - [x] PostgreSQL database configuration
 - [x] Database connection
 - [x] Database models and table creation
-- [ ] User authentication
+- [x] User authentication
 - [ ] Product management APIs
 - [ ] Stock management
 - [ ] Dashboard APIs
