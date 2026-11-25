@@ -22,3 +22,13 @@ ACCESS_TOKEN_EXPIRE_MINUTES = int(
 
 if not JWT_SECRET_KEY:
     raise ValueError("JWT_SECRET_KEY is not configured")
+
+
+CORS_ORIGINS = [
+    origin.strip()
+    for origin in os.getenv(
+        "CORS_ORIGINS",
+        "http://localhost:5173"
+    ).split(",")
+    if origin.strip()
+]
